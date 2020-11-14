@@ -1,0 +1,92 @@
+Tables
+    stocks
+        *symbol - primary key
+        *name
+        *price
+        *description
+        *sector
+        *country
+        *low
+        *high
+
+    users
+        *id - primary key
+        *username
+        *firstname
+        *lastname
+        *email
+        *password
+        *balance
+        *last_login
+        
+    user_stocks - this keeps track of what the user is currently invested in
+        *user_id - fk
+        *symbol - fk
+        *qty
+        p_price - this is the purchase price
+
+    investment - records every investment
+        *id - pk
+        *user_id - fk(users)
+        *symbol - fk(stocks)
+        *qty
+        *total
+    sales - records every time a user sells some his/her stock
+        *id - pk
+        *seller_id - fk
+        *symbol - fk
+        *qty
+        *total
+
+    trades - records of every trade made by users
+        *id - pk
+        *seller_id - fk
+        *symbol1 - fk
+        *qty1 
+        *buyer_id - fk
+        *symbol2 - fk
+        *qty2
+    
+    options - records every option a user makes
+        *id - pk
+        *user_id - fk
+        *symbol - fk
+        *type - this should put or short
+        *point - price that user sets as the marker
+        *deadline - date and time user sets to end the timer.
+        *status - set to pending,success,loss
+
+    favorites
+        *id - primary key
+        *symbol - foreign key
+        *user_id - foreign key
+
+    posts
+        id - primary key
+        user_id - foreign key
+        title
+        body
+    comments
+        id - primary key
+        user_id - foreign key
+        text
+        post_id - foreign key
+    likes
+        id - primary key
+        post_id - foreign key
+        user_id - foreign key
+    dislikes
+        id - primary key
+        post_id - foreign key
+        user_id - foreign key
+    friend_requests
+        id - pk
+        requestor_id - fk
+        requestee_id - fk
+        accepted - boolean
+        declined - boolean
+    friends
+        id - pk
+        user1_id - fk
+        user2_id - fk
+    

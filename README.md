@@ -1,3 +1,13 @@
+# About Vestler
+
+Vestler is a stock-market simulating social media app. Anybody can sign up and will start
+with $15000 in fake money to purchase stock. Users can become friends and view each others
+investments, posts, trade stock with others, share news, discuss oppurtunities. Users can
+purchase stock, intiate an open-ended trade request, and play options.
+
+The frontend was built using create-react-app and uses React hooks, Redux, bootstrap and axios. The backend uses node, express, postgresql, custom ORM, authentication/authorization middleware with JWT as well as bcrypt.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

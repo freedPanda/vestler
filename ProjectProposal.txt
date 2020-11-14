@@ -1,0 +1,35 @@
+Capstone 2 Proposal 
+Stock Market Investment Simulation with social media.
+
+Features: Live updated stock ticker board displaying price of user’s favorited stocks 
+and current stocks invested in. Invest in stock, play options, search stock, edit account 
+info, authentication/authorization. Graph of stock tickers daily history at intervals of 
+daily for past month, weekly for past 6 months, and monthly for past year. Account ,edit 
+account, profile page. Search for investors by name, username and friend request. See 
+number of users invested and see whos invested in it.
+
+Tech: React, Redux, Express, Node 
+
+Focus: Front-end and Back-end
+
+This will be a mobile-friendly web application for pretending to invest in the stock 
+market. Users can search stocks by company name or stock ticker or industry to view 
+history of the stocks performance. Each user is provided with $15k of fake money to 
+purchase stock. Users can sell their stock or list it for a trade that can be accepted 
+by another user. Users can request to follow each other and see each others portfolio. 
+Users can make posts, comment, like, dislike. Users can also play options where the 
+objective is to guess if the stock price will be above or below a predicted price after 
+a given period of time.
+
+Goals: Demonstrate strong skills in Javascript Front-end and Back-end development
+
+Audience: Interested in playing the stock market in a social learning environment
+
+Data: The data will be initialized from a list. As users search for stock that isn’t in the db, the db will grow. The chosen Api is Alpha Vantage which is a free api that is rate limited to 500 calls per day and 5 calls per minute. There will be a backup Api finnhub.io that rate limits at 60 calls per minute. 
+
+Project Outline:
+	Schema: See DB_Design.txt in this project folder
+	Api Issues: Switching between Apis. Rate Limits
+	Sensitive Data: Passwords
+	Functionality: Single page web-app, state managed by redux, authentication, authorization, bcrypt protected passwords, JWT, protected routes.
+	User Flow: See this link https://docs.google.com/drawings/d/1Ef0yJ3UHY0RXpGWC3dKriJmk-ZnHKnof4poj3sdv1ew/edit?usp=sharing

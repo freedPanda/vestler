@@ -1,0 +1,42 @@
+Index
+    App
+        NavBar
+            UserNav
+            VisiterNav
+        Routes
+            HomePage
+                StockTicker
+                SearchBar
+            Login/Signup
+                LoginForm
+                SignUpForm
+            Profile
+                StockTicker
+                ProfileDetails
+                    UserInfo
+                FavList
+                ContentPanel
+                    Investments
+                        InvestmentList
+                        OptionsList
+                    Transactions - list of sales, trades, investments
+                        InvestmentList
+                    Trades - list of trades awaiting a trader
+                        TradeList
+                    Social
+                        Following
+                        Posts
+                        Requests
+                    Account
+                        AccountDetails
+                        EditForm
+            Stocks
+                StockList
+            Stock
+                Details
+                History
+            Investors
+                InvestorList
+            Investor
+                FriendView
+                NotFriendView
